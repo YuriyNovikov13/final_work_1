@@ -6,3 +6,17 @@
 // ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
+string[] array = { "hello", "2", "world", ":-)" };
+
+int LengthNewArray(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    return count;
+}

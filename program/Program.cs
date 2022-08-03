@@ -20,3 +20,18 @@ int LengthNewArray(string[] arr)
     }
     return count;
 }
+
+string[] NewArray(string[] arr, int count)
+{
+    int j = 0;
+    string[] newArray = new string[count];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+        {
+            newArray[j] = arr[i];
+            j++;
+        }
+    }
+    return newArray;
+}
